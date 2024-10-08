@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>وب رام</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(5px);
+            margin: 0;
+        }
+        img {
+            width: 50px; /* اندازه کوچک برای تصویر */
+        }
+        .container {
+            background-color: #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .button {
+            background-color: #ccc;
+            border-radius: 10px;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .footer {
+            position: absolute;
+            bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://digifycdn.com/media/item_images/IMG_20241008_134525_490.png?x-img=v1/optimize,q_95/resize,h_500,w_500,force_true" alt="Logo">
+    <h1>وب رام</h1>
+    <h2>خرید سایت دلخواه</h2>
+    
+    <div class="container">
+        <div class="button" onclick="goToPlans()">دیدن پلن‌ها</div>
+    </div>
+
+    <div class="footer">
+        شماره تلفن پشتیبانی: 09991878771
+    </div>
+
+    <script>
+        function goToPlans() {
+            // نمایش لودینگ برای 3 ثانیه
+            document.body.innerHTML = "<h1>در حال انتقال...</h1>";
+            setTimeout(() => {
+                window.location.href = "plans.html"; // لینک به صفحه پلن‌ها
+            }, 3000);
+        }
+    </script>
+</body>
+</html>

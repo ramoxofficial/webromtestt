@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پلن‌ها</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .box {
+            background-color: #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            width: 300px;
+            text-align: center;
+        }
+        .button {
+            background-color: #ccc;
+            border-radius: 10px;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>پلن معمولی</h1>
+    <div class="box">سایت دلخواه</div>
+    <div class="box">ویرایش کلمات و عبارات</div>
+    <div class="box">اتصال سایت در بعضی از کشورها</div>
+    <div class="box">اتصال دامنه دلخواه</div>
+    <div class="box">Theme دلخواه</div>
+    <div class="box">لینک دلخواه</div>
+
+    <div class="button" onclick="goToForm()">خرید پلن معمولی</div>
+
+    <script>
+        function goToForm() {
+            window.location.href = "form.html"; // لینک به صفحه فرم
+        }
+    </script>
+</body>
+</html>
